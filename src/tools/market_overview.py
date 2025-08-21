@@ -5,7 +5,7 @@ Contains tools for fetching trading dates and all stock data.
 import logging
 from typing import Optional
 
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 from src.data_source_interface import FinancialDataSource, NoDataFoundError, LoginError, DataSourceError
 from src.formatting.markdown_formatter import format_df_to_markdown
 

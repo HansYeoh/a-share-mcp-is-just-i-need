@@ -6,7 +6,7 @@ import logging
 from datetime import datetime, timedelta
 import calendar
 
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 from src.data_source_interface import FinancialDataSource
 
 logger = logging.getLogger(__name__)

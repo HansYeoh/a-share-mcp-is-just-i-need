@@ -4,7 +4,7 @@ Financial report related tools for MCP server.
 import logging
 from typing import List, Optional
 
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 from src.data_source_interface import FinancialDataSource
 from src.tools.base import call_financial_data_tool
 

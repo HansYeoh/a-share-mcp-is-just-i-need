@@ -4,7 +4,7 @@ Stock market data tools for MCP server.
 import logging
 from typing import List, Optional
 
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 from src.data_source_interface import FinancialDataSource, NoDataFoundError, LoginError, DataSourceError
 from src.formatting.markdown_formatter import format_df_to_markdown
 

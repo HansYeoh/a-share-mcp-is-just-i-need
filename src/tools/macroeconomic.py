@@ -5,7 +5,7 @@ Contains tools for fetching interest rates, money supply data, and more.
 import logging
 from typing import Optional
 
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 from src.data_source_interface import FinancialDataSource
 from src.tools.base import call_macro_data_tool
 

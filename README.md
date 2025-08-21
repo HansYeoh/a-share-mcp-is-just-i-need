@@ -110,7 +110,7 @@ a_share_mcp/
 
 > 所以说，在交易日的当天，如果是在 17:30 之前询问当天的数据，是无法获取到的。
 
-## 安装环境
+## 安装环境（使用 uv + FastMCP 2）
 
 在项目根目录下执行：
 
@@ -128,6 +128,12 @@ uv venv
 
 # 3. 安装所有依赖（必须在激活的虚拟环境中执行）
 uv sync
+
+# 4. 验证 FastMCP 是否就绪（可选）
+uv run fastmcp version
+
+# 5. 本地直接运行（可选，阻塞式）
+uv run python mcp_server.py
 ```
 
 ## 使用：在 MCP 客户端中配置服务器
@@ -148,9 +154,9 @@ uv sync
       "args": [
         "--directory",
         "C:\\Users\\YourName\\Projects\\a_share_mcp", // 替换为你的项目根目录绝对路径，不一定是C盘，按实际的填写
-        "run",
-        "python",
-        "mcp_server.py"
+  "run",
+  "python",
+  "mcp_server.py"
       ],
       "transport": "stdio"
       // "workingDirectory": "C:\\Users\\YourName\\Projects\\a_share_mcp", // 使用 uv --directory 后，此项可能不再必需，但建议保留作为备用
