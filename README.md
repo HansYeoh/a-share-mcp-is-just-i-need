@@ -15,6 +15,8 @@
 A股mcp。
 
 本项目是一个基于专注于 A 股市场的 MCP 服务器，它提供股票基本信息、历史 K 线数据、财务指标、宏观经济数据等多种查询功能，理论上来说，可以回答有关 A 股市场的任何问题，无论是针对大盘还是特定股票。
+目前已经适配了最新的fastmcp2.0，可以通过 mcp_server_http.py 开启 http_stream 模式，对外提供服务，默认访问地址是 http://ip:8000/mcp。
+现在可以通过 fastmcp-cloud 进行部署。
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
